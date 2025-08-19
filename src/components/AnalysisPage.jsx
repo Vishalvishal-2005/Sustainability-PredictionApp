@@ -123,7 +123,7 @@ const Analysis = () => {
                     <button className="btn btn-success w-100 mb-2" onClick={fetchVisualization} disabled={loadingChart}>
                         {loadingChart ? "Generating Chart..." : "Generate Chart"}
                     </button>
-                    <button className="btn btn-secondary w-100 mt-3" onClick={() => navigate("/results")}>
+                    <button className="btn btn-secondary w-100 mt-3" onClick={() => navigate("/")}>
                         Back to Dashboard
                     </button>
                 </div>
