@@ -73,7 +73,7 @@ const TrainAndPredict = () => {
                 {/* 🔹 Download Sample Dataset Button */}
                 <div className="text-center mb-4">
                     <a 
-                        href="/sample-dataset.csv"   // place your CSV in the public folder
+                        href="public/sustainability_dataset (1).csv"   // place your CSV in the public folder
                         download
                         className="btn btn-outline-info"
                     >
