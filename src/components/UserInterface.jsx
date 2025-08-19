@@ -1,7 +1,7 @@
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
-import { FaChartLine, FaFileUpload, FaPlayCircle } from 'react-icons/fa';
+import { FaChartLine, FaFileUpload, FaPlayCircle, FaDownload } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 
 const TrainAndPredict = () => {
@@ -69,6 +69,18 @@ const TrainAndPredict = () => {
     return (
         <div className="container mt-5 d-flex justify-content-center">
             <div className="card p-4 shadow-lg" style={{ maxWidth: '500px', width: '100%' }}>
+                
+                {/* 🔹 Download Sample Dataset Button */}
+                <div className="text-center mb-4">
+                    <a 
+                        href="/sample-dataset.csv"   // place your CSV in the public folder
+                        download
+                        className="btn btn-outline-info"
+                    >
+                        <FaDownload className="me-2" /> Download Sample Dataset
+                    </a>
+                </div>
+
                 <h2 className="text-primary text-center mb-3">
                     <FaFileUpload className="me-2" /> Upload & Train Model
                 </h2>
