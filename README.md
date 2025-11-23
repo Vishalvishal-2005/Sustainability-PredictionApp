@@ -1,289 +1,192 @@
-<img width="1887" height="1079" alt="image" src="https://github.com/user-attachments/assets/4e7e644b-4582-485c-89c7-59ab1d8f1cd1" />
-<img width="1905" height="1079" alt="image" src="https://github.com/user-attachments/assets/cd787482-7e6b-4bf2-86d6-3cf10b6faea1" />
-<img width="1868" height="357" alt="image" src="https://github.com/user-attachments/assets/414699b2-9273-42a0-a74b-087a96d00bb9" />
-<img width="1919" height="616" alt="image" src="https://github.com/user-attachments/assets/c587db30-79ec-41f5-a9da-390eac88cf5d" />
-<img width="1878" height="1079" alt="image" src="https://github.com/user-attachments/assets/62a10529-c3a3-4461-96f7-6a595aed854b" />
-<img width="1874" height="1060" alt="image" src="https://github.com/user-attachments/assets/759c953a-2442-49e7-a46c-3c16a9673c5d" />
+# 🌱 Sustainability Score Prediction System  
+A Machine Learning project that predicts the sustainability score of a product or organization based on multiple environmental and operational features.
 
+---
 
+## 📌 **1. Problem Statement**
+Sustainability has become a crucial factor for organizations and products in today’s environmentally conscious world.  
+However, measuring sustainability manually is time-consuming, inconsistent, and prone to human biases.
 
+👉 This project aims to **predict a Sustainability Score (0–100)** using machine learning models based on key factors such as:
 
-Sustainability Prediction Project 🌱
-1. Problem Statement
-Sustainability has become a critical global priority as industries worldwide strive to reduce environmental impact. Companies face significant challenges in:
+- Energy consumption  
+- Water usage  
+- Carbon emissions  
+- Waste production  
+- Production efficiency  
+- Recycling rate  
+- Environmental policy factors  
 
-Predicting carbon emission levels accurately
+This automated scoring helps companies **improve decision-making**, **meet environmental standards**, and move towards greener operations.
 
-Forecasting energy consumption patterns
+---
 
-Estimating waste generation trends
+## 📌 **2. Existing Technology / Limitations**
+Traditional sustainability assessment relies on:
 
-Calculating environmental performance ratings
+### ❌ Manual analysis  
+- Time-consuming  
+- Inconsistent across organizations  
 
-Making data-driven decisions for sustainability improvements
+### ❌ Basic reporting tools  
+- Only show past data  
+- No predictive capabilities  
 
-Traditional methods lack predictive capabilities, making it difficult for organizations to plan effective environmental strategies and meet sustainability targets.
+### ❌ Lack of automation  
+- Hard to scale  
+- Error-prone calculations  
 
-2. Existing Technologies / Current Approaches
-Current Industry Practices
-Method	Description	Limitations
-Manual Audits	Periodic environmental assessments	❌ Time-consuming
-❌ Subjective
-❌ Infrequent
-Spreadsheet Reporting	Basic data tracking in Excel	❌ Error-prone
-❌ Limited analysis
-❌ No automation
-Basic Dashboards	Descriptive monitoring tools	❌ No predictive capability
-❌ Reactive approach
-External Rating Agencies	Third-party sustainability assessments	❌ Costly
-❌ Delayed results
-❌ Generic metrics
-Technology Gaps
-Lack of predictive analytics for future planning
+---
 
-No real-time sustainability scoring
+## 📌 **3. Proposed System (This Project)**
+This project solves the above limitations by using **Machine Learning models** to predict a sustainability score with high accuracy.
 
-Limited integration with operational data
+### ✔ Automatic prediction  
+### ✔ Data-driven decision making  
+### ✔ Easy visualization using dashboards  
+### ✔ Model comparison using multiple algorithms  
+### ✔ User-friendly interface (React Frontend + FastAPI/Django backend)
 
-Manual processes causing delays and errors
+---
 
-3. Project Overview
-Solution Architecture
-This project implements an end-to-end machine learning pipeline for sustainability prediction:
+## 📂 **4. Dataset Overview**
+The dataset contains **environment-related metrics** used for sustainability calculations.
 
-text
-Data Collection → Preprocessing → Model Training → Prediction → Visualization → Insights
-Key Components
-FastAPI Backend: RESTful API for model serving
+### **📑 Key Columns Include:**
+- Energy Consumption  
+- Water Usage  
+- Carbon Emissions  
+- Waste Generation  
+- Recycling Rate  
+- Production Efficiency  
+- Sustainability Score (Target)
 
-React Frontend: Interactive dashboard for visualization
+### **Dataset Size:**  
+- Rows: *Your dataset rows count here*  
+- Columns: *Number of features + label*
 
-MySQL Database: Historical prediction storage
+### **🔽 Dataset Snapshot**
+<p align="center">
+    <img width="1905" height="1079" alt="image" src="https://github.com/user-attachments/assets/a15fb5ae-b2c3-48c2-b34a-364b1ade553b" width="850" />
+</p>
 
-XGBoost Models: Machine learning for predictions
+(Add your screenshot here)
 
-Automated Visualization: Chart generation for insights
+---
 
-Features
-✅ Real-time sustainability analysis
+## 🤖 **5. Models Used**
+Multiple machine learning models were trained and compared:
 
-✅ Multi-year future predictions
+| Model | Description |
+|-------|-------------|
+| **Linear Regression** | Baseline regression model |
+| **Random Forest Regressor** | Handles non-linear relationships well |
+| **Gradient Boosting Regressor** | Ensemble boosting method for better accuracy |
+| **XGBoost Regressor** | Highly efficient boosting algorithm |
+| **Neural Network (optional)** | For deep learning-based prediction |
 
-✅ Automated data processing
+---
 
-✅ Interactive visualizations
+## 📊 **6. Model Accuracy / Results**
+Below is a comparison of model performances:
 
-✅ Historical tracking
+| Model | R² Score | MAE | MSE |
+|-------|---------|------|------|
+| Linear Regression | *value* | *value* | *value* |
+| Random Forest | *value* | *value* | *value* |
+| Gradient Boosting | *value* | *value* | *value* |
+| XGBoost | *value* | *value* | *value* |
 
-✅ API-based integration
+### 🏆 Best Model:  
+**Random Forest / XGBoost** (based on your results)
+<p align="center">
+<img width="1887" height="1079" alt="image" src="https://github.com/user-attachments/assets/7ca36a63-a23c-4cdd-a971-290ef5a043b0" />
+</p>
+---
 
-4. Dataset Used
-Dataset Structure
-Feature	Type	Description	Range
-production_volume	Float	Manufacturing output units	50-500 units
-waste_generated	Float	Waste produced in kg	10-100 kg
-employee_count	Integer	Number of employees	5-100
-energy_consumption	Float	Energy usage in kWh	200-2000 kWh
-carbon_emission	Float	CO₂ emissions in kg	20-200 kg
-Dataset Requirements
-csv
-production_volume,waste_generated,employee_count,energy_consumption,carbon_emission
-100,20,10,500,50
-150,25,15,700,60
-200,30,20,900,70
-250,35,25,1100,80
-Data Characteristics
-Format: CSV files
+## 📉 **7. Result Graphs / Visualizations**
 
-Records: 15,000+ industrial data points
+### 📈 Feature Importance  
+<p align="center">
+    <img width="1878" height="1079" alt="image" src="https://github.com/user-attachments/assets/376e0602-9ad4-4094-8de6-7e734cfb1767" />
 
-Features: 5 core sustainability parameters
+</p>
 
-Quality: Clean, normalized, no missing values
+### 📈 Model Comparison Chart  
+<p align="center">
+    <img width="1874" height="1060" alt="image" src="https://github.com/user-attachments/assets/0a9e1fc1-14d0-4705-8ecc-d03f9e143dca"  />
 
-5. Models Used
-Machine Learning Architecture
-Model	Algorithm	Purpose	Features
-Energy Predictor	XGBoost Regressor	Predict energy consumption	Production, Waste, Employees
-Emission Predictor	XGBoost Regressor	Predict carbon emissions	Production, Waste, Employees
-Model Specifications
-python
-XGBRegressor(
-    n_estimators=100,
-    learning_rate=0.1,
-    max_depth=5,
-    random_state=42
-)
-Training Process
-Data Preprocessing: Handle missing values, normalization
+ 
+</p>
 
-Feature Selection: Production volume, waste generated, employee count
+---
 
-Model Training: Separate models for energy and emissions
+## 🖥️ **8. Technology Stack**
+| Component | Technology |
+|-----------|------------|
+| **Frontend** | React JS |
+| **Backend** | FastAPI / Django / Flask |
+| **Machine Learning** | Scikit-Learn, XGBoost |
+| **Visualization** | Matplotlib, Seaborn, Plotly |
+| **Dataset Handling** | Pandas, NumPy |
+| **Deployment** | Vercel / Render / Railway (optional) |
 
-Validation: Cross-validation with 5 folds
+---
 
-Persistence: Model saving for API deployment
+## 🚀 **9. How It Works**
 
-6. Results / Accuracy
-Performance Metrics
-Model	R² Score	RMSE	MAE	Training Time
-Energy Consumption	0.92	45.2 kWh	32.1 kWh	28.4s
-Carbon Emissions	0.89	8.7 kg	6.3 kg	28.4s
-Prediction Accuracy
-Metric	Value	Description
-Overall Accuracy	90.5%	Weighted average of both models
-Sustainability Score	85% correlation	Compared with actual metrics
-Future Projections	82% accuracy	Up to 10-year predictions
-Business Impact
-92% accurate energy consumption predictions
+1. Dataset uploaded by user  
+2. Python backend loads data → preprocesses → trains models  
+3. Best model selected based on R²  
+4. User uploads new data  
+5. Backend predicts sustainability score  
+6. Results shown in React UI  
 
-89% accurate carbon emission forecasts
+<p align="center">
+<img width="1868" height="357" alt="image" src="https://github.com/user-attachments/assets/b37dcf70-5634-4334-96b9-dc4708f294f5" />
+</p>
 
-Real-time analysis with <2 second response time
+---
 
-Multi-year projections with 82% reliability
+## 🔧 **10. Installation & Setup**
 
-7. Visualizations
-Available Charts
-
-
-Figure 1: Model Performance Comparison
-
-text
-[Bar chart comparing R² scores across different algorithms]
-Figure 2: Feature Importance Analysis
-
-text
-[Chart showing impact of production, waste, and employees on predictions]
-Figure 3: Sustainability Trends Over Time
-
-text
-[Line chart displaying energy and emission trends across years]
-Figure 4: Prediction vs Actual Values
-
-text
-[Scatter plot demonstrating model accuracy on test data]
-Visualization Types
-Line Charts: Temporal trends analysis
-
-Bar Charts: Comparative metric display
-
-Scatter Plots: Correlation visualization
-
-Pie Charts: Proportional distribution
-
-Heatmaps: Multi-variable relationships
-
-8. Technology Stack
-Backend Technologies
-Component	Technology	Purpose
-API Framework	FastAPI	RESTful API development
-Machine Learning	Scikit-learn, XGBoost	Model training and inference
-Data Processing	Pandas, NumPy	Data manipulation and analysis
-Visualization	Matplotlib	Chart and graph generation
-Database	MySQL	Historical data storage
-Server	Uvicorn	ASGI server implementation
-Frontend Technologies
-Component	Technology	Purpose
-Framework	React.js	User interface development
-Styling	Tailwind CSS	Responsive design system
-Icons	Lucide React	UI icon library
-State Management	React Context API	Application state handling
-Deployment & DevOps
-Component	Technology	Purpose
-Version Control	Git, GitHub	Code management and collaboration
-API Documentation	Swagger/OpenAPI	Automatic API docs generation
-CORS Management	FastAPI CORS	Cross-origin resource sharing
-Logging	Python logging	Application monitoring
-9. Project Structure
-text
-sustainability-prediction/
-├── 📂 backend/
-│   ├── main.py                 # FastAPI application
-│   ├── requirements.txt        # Python dependencies
-│   └── prediction_plot.png     # Generated visualizations
-├── 📂 frontend/
-│   ├── src/
-│   │   ├── components/         # React components
-│   │   ├── pages/             # Application pages
-│   │   └── App.js             # Main application
-│   └── package.json           # Node.js dependencies
-├── 📂 database/
-│   └── schema.sql             # Database schema
-├── 📂 documentation/
-│   ├── API_DOCS.md            # API documentation
-│   └── SETUP_GUIDE.md         # Installation guide
-└── README.md                  # Project overview
-10. Getting Started
-Prerequisites
-Python 3.8+
-
-Node.js 16+
-
-MySQL 8.0+
-
-Git
-
-Installation Steps
-Clone Repository
-
-bash
-git clone https://github.com/your-username/sustainability-prediction.git
-cd sustainability-prediction
-Backend Setup
-
-bash
-cd backend
-python -m venv venv
-source venv/bin/activate
+### 📌 Clone repository
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git](https://github.com/Vishalvishal-2005/Sustainability-PredictionApp
+cd https://github.com/Vishalvishal-2005/Sustainability-PredictionApp
+📌 Install backend dependencies
 pip install -r requirements.txt
-uvicorn main:app --reload
-Frontend Setup
 
-bash
-cd frontend
+📌 Run backend
+python app.py
+
+📌 Run frontend
 npm install
 npm start
-Database Setup
 
-sql
-CREATE DATABASE sustainable_dashboard;
-API Testing
-bash
-# Health check
-curl http://localhost:8000/health
+📦 11. Project Structure
+📁 project-folder
+│── 📁 frontend (React)
+│── 📁 backend (Python API)
+│── 📁 models
+│── 📁 dataset
+│── README.md
 
-# Sample dataset
-curl http://localhost:8000/sample-dataset -o sample.csv
-11. Conclusion
-Key Achievements
-✅ High Accuracy: 90.5% overall prediction accuracy
+📝 12. Conclusion
 
-✅ Real-time Processing: Sub-second prediction responses
+This machine learning-based sustainability score prediction system provides:
 
-✅ Scalable Architecture: Supports enterprise-level data volumes
+✔ Better accuracy
+✔ Automation
+✔ Real-time prediction
+✔ User-friendly dashboard
 
-✅ User-friendly Interface: Intuitive dashboard for non-technical users
+It can be scaled for industries, organizations, supply chains, or environmental monitoring systems.
 
-✅ Comprehensive API: Full RESTful API for integration
+📧 Contact
 
-Business Value
-Cost Savings: Reduced manual audit costs by 60%
+For any queries, feel free to reach out:
 
-Better Planning: Accurate 10-year sustainability forecasts
-
-Compliance: Improved environmental regulation adherence
-
-Efficiency: Automated reporting saving 40+ hours monthly
-
-Future Enhancements
-🔄 Real-time IoT sensor integration
-
-🔄 Advanced deep learning models
-
-🔄 Multi-industry adaptation
-
-🔄 Automated sustainability reporting
-
-🔄 Carbon credit trading integration
+VISHAL P
+Email: vishal20050413@gmail.com
+GitHub: https://github.com/Vishalvishal-2005/Sustainability-PredictionApp
